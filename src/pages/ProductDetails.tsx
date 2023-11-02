@@ -1,12 +1,12 @@
 // ProductDetail.tsx
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
+// import { useCart } from '../context/CartContext';
 
 const ProductDetail: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
   // const history = useHistory();
-  const { dispatch } = useCart();
+  // const { dispatch } = useCart();
 
   // Replace this with your product data
   const product = {

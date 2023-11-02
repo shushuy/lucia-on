@@ -10,7 +10,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Home v1.0.0</h1>
       {products.map((product) => (
         <div key={product.id}>
           <p>{product.name}</p>

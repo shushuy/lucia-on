@@ -1,0 +1,31 @@
+.loading-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 75vh;
+  width: 100%;
+}
+
+.product-details-container {
+  display: flex;
+  height: 75vh;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.product-details-image {
+  padding: 8px;
+  width: auto;
+  height: 400px;
+  object-fit: cover;
+  @media (max-width: 768px) {
+    object-fit: cover;
+    height: 300px;
+  }
+}
+
+.product-details-text-container {
+  margin: 8px;
+}

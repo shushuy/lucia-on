@@ -97,4 +97,76 @@ export const products:Array<MediaCardProps> =  [
     url:
       'https://media.istockphoto.com/id/1090382460/es/foto/congelar-cerezas-desecadas.jpg?s=612x612&w=0&k=20&c=LG7AmKgT4g82YA1ArKLwJeQvy3MD9AI5LAFjN3FZxrY=',
   },
+   {
+    id: 13,
+    title: 'Frambuesa',
+    price: 100,
+    description: 'Frambuesa 100 g',
+    url:
+      'https://media.istockphoto.com/id/1330764567/es/foto/bayas-de-frambuesa-deshidratadas-y-cocinadas-en-casa-frambuesas-secas-y-org%C3%A1nicas-fondo.jpg?s=612x612&w=0&k=20&c=V8PKKUC609b5wWb5CHzM7cyIQZir8xXsV8qYpYxtLgc=',
+  },
+  {
+    id: 14,
+    title: 'Fresas',
+    price: 60,
+    description: 'Fresas 100 g',
+    url:
+      'https://media.istockphoto.com/id/1076626572/es/foto/congelaci%C3%B3n-de-fresa-deshidratada.jpg?s=612x612&w=0&k=20&c=4_nXnwXoCNjpDIhNfs5s89XyoxVUBq7lYDAz3TUGYjQ=',
+  },
+  {
+    id: 15,
+    title: 'Mora negra',
+    price: 70,
+    description: 'Mora negra 100 g',
+    url:
+      'https://media.istockphoto.com/id/1268480936/es/foto/blackberry-seco-los-sabores-de-las-bayas-secas-taiga-altai-en-una-feria-rural.jpg?s=612x612&w=0&k=20&c=UU1P64ZL_CzA2RftR67RT2WwjVWYC-bhsQC12iRMUm8=',
+  },
+  {
+    id: 16,
+    title: 'Mora blanca',
+    price: 75,
+    description: 'Mora blanca 100 g',
+    url:
+      'https://media.istockphoto.com/id/135566464/es/foto/mulberries-seca.jpg?s=612x612&w=0&k=20&c=0-Swrz4uqkZopxEAURlIW-7BrNiE7NOEw0V9zk_cE9Y=',
+  },
+    {
+    id: 17,
+    title: 'Pasas',
+    price: 30,
+    description: 'Pasas 100 g',
+    url:
+      'https://media.istockphoto.com/id/1357208862/es/foto/porci%C3%B3n-de-pasas-oscuras-deshidratadas-dulces-y-saludables.jpg?s=612x612&w=0&k=20&c=EZHG3x-AHCP1uds5t5ciPB-3bJsUTM0tJm9HvOAcLaU=',
+  },
+  {
+    id: 18,
+    title: 'Arándano',
+    price: 50,
+    description: 'Arándano 100 g',
+    url:
+      'https://media.istockphoto.com/id/488793908/es/foto/ar%C3%A1ndanos-cranberries-ar%C3%A1ndanos-seca.jpg?s=612x612&w=0&k=20&c=w67CHHw10pn4F2MVSG8FJhpf_Wlv0kTbtd0DcuIzJbM=',
+  },
+  {
+    id: 19,
+    title: 'Cereza silvestre',
+    price: 70,
+    description: 'Cereza silvestre 100 g',
+    url:
+      'https://media.istockphoto.com/id/1226207106/es/foto/cereza-seca-aislada-en-blanco.jpg?s=612x612&w=0&k=20&c=MRjS5ZGcJxRPxCekF4W-FZ_Afruhdcwv4HscMkVdBlk=',
+  },
+  {
+    id: 20,
+    title: 'Naranja sin semilla',
+    price: 40,
+    description: 'Naranja sin semilla 100 g',
+    url:
+      'https://media.istockphoto.com/id/531508499/es/foto/tres-porciones-de-naranja-seca-desde-arriba.jpg?s=612x612&w=0&k=20&c=sQHOdKuZycHzFqUj5BjYyopzkSE2eUwXxkCzNtTvvHA=',
+  },
+  {
+    id: 21,
+    title: 'Mandarina sin semilla',
+    price: 60,
+    description: 'Mandarina sin semilla 100 g',
+    url:
+      'https://media.istockphoto.com/id/1472357316/es/foto/rodajas-secas-de-forma-redonda-de-mandarina-de-color-naranja-brillante.jpg?s=612x612&w=0&k=20&c=SPwM2wSYGBY02izbT0YkeHNt2d_jEs7FA_R3AjUtaJQ=',
+  },
 ]

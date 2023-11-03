@@ -169,4 +169,116 @@ export const products:Array<MediaCardProps> =  [
     url:
       'https://media.istockphoto.com/id/1472357316/es/foto/rodajas-secas-de-forma-redonda-de-mandarina-de-color-naranja-brillante.jpg?s=612x612&w=0&k=20&c=SPwM2wSYGBY02izbT0YkeHNt2d_jEs7FA_R3AjUtaJQ=',
   },
-]
+  {
+    id: 22,
+    title: 'Chía',
+    price: 230,
+    description: 'Chía 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2019/02/10/02/45/chiaseed-3986385_640.jpg',
+  },
+  {
+    id: 23,
+    title: 'Linaza',
+    price: 180,
+    description: 'Linaza 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2018/09/08/18/21/linseed-3663021_640.jpg',
+  },
+  {
+    id: 24,
+    title: 'Almendra Blanqueada',
+    price: 110,
+    description: 'Almendra Blanqueada 100 g',
+    url:
+      'https://cdn.pixabay.com/photo/2015/12/27/12/26/almonds-1109734_1280.jpg',
+  },
+  {
+    id: 25,
+    title: 'Chile Guajillo',
+    price: 130,
+    description: 'Chile Guajillo 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2018/08/02/17/23/chile-3580059_1280.jpg',
+  },
+  {
+    id: 26,
+    title: 'Chile de Árbol Seco',
+    price: 160,
+    description: 'Chile de Árbol Seco 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2016/07/12/22/36/arbol-1513284_640.jpg',
+  },
+  {
+    id: 27,
+    title: 'Chile Habanero',
+    price: 180,
+    description: 'Chile Habanero 200 g',
+    url:
+      'https://cdn.pixabay.com/photo/2014/10/22/21/46/habaneros-499057_640.jpg',
+  },
+  {
+    id: 28,
+    title: 'Cacao',
+    price: 200,
+    description: 'Cacao 200 g',
+    url:
+      'https://cdn.pixabay.com/photo/2017/07/20/17/01/cacao-bean-2522918_640.jpg',
+  },
+  {
+    id: 29,
+    title: 'Nuez de la India',
+    price: 310,
+    description: 'Nuez de la India 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2016/11/09/17/59/castanea-1812358_640.jpg',
+  },
+  {
+    id: 30,
+    title: 'Avellana',
+    price: 230,
+    description: 'Avellana 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2018/10/30/08/39/hazelnuts-3783066_640.jpg',
+  },
+  {
+    id: 31,
+    title: 'Nuez Pecana',
+    price: 300,
+    description: 'Nuez Pecana 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2016/02/22/03/52/pecans-1214712_640.jpg',
+  },
+  {
+    id: 32,
+    title: 'Pistache',
+    price: 340,
+    description: 'Pistache 1 kg',
+    url:
+      'https://cdn.pixabay.com/photo/2018/03/13/20/08/pistachios-3223610_640.jpg',
+  },
+  {
+    id: 33,
+    title: 'Semilla de Calabaza',
+    price: 35,
+    description: 'Semilla de Calabaza 100 g',
+    url:
+      'https://cdn.pixabay.com/photo/2017/09/08/14/24/core-2728867_640.jpg',
+  },
+  {
+    id: 34,
+    title: 'Semilla de Girasol',
+    price: 25,
+    description: 'Semilla de Girasol 100 g',
+    url:
+      'https://cdn.pixabay.com/photo/2014/11/19/14/10/sunflower-seeds-537652_640.jpg',
+  },
+  {
+    id: 35,
+    title: 'Semilla de Sésamo',
+    price: 50,
+    description: 'Semilla de Sésamo 100 g',
+    url:
+      'https://cdn.pixabay.com/photo/2016/08/28/22/08/sesame-1627009_640.jpg',
+  },
+];

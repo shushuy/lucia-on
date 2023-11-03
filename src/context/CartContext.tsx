@@ -1,57 +1,63 @@
-// CartContext.tsx
-import React, { createContext, useContext, useReducer } from 'react';
+import React, { ReactNode, createContext, useContext, useState } from "react";
 
-type CartItem = {
+interface CartItem {
   id: number;
-  name: string;
-  price: number;
   quantity: number;
-};
-
-type CartAction =
-  | { type: 'ADD_TO_CART'; product: CartItem }
-  | { type: 'REMOVE_FROM_CART'; productId: number };
-
-type CartState = CartItem[];
-
-const CartContext = createContext<{
-  cart: CartState;
-  dispatch: React.Dispatch<CartAction>;
-} | null>(null);
-
-const cartReducer = (state: CartState, action: CartAction): CartState => {
-  switch (action.type) {
-    case 'ADD_TO_CART':
-      // Implement the logic to add a product to the cart
-      // You can use state.concat(action.product) or create a copy of the cart with the new product
-      return state;
-    case 'REMOVE_FROM_CART':
-      // Implement the logic to remove a product from the cart
-      return state;
-    default:
-      return state;
-  }
-};
-
-interface CartProps {
-  children: React.ReactNode;
+  price: number;
+  title: string,
+  description: string,
+  url: string
 }
 
+interface CartStateInterface {
+  cartItems: CartItem[];
+  removeFromCart: (id: number) => void;
+  clearCart: () => void;
+  addItemToCart: (item: CartItem) => void;
+}
 
-export const CartProvider: React.FC<CartProps> = ({ children }) => {
-  const [cart, dispatch] = useReducer(cartReducer, []);
+const initialState: CartStateInterface = {
+  cartItems: [],
+  removeFromCart: (id: number) => {},
+  clearCart: () => {},
+  addItemToCart: (item: CartItem) => {}
+};
+
+export const CartContext = createContext<CartStateInterface>(initialState);
+
+interface CartContextProviderProps {
+  children?: ReactNode;
+}
+
+const CartContextProvider: React.FC<CartContextProviderProps> = ({ children }) => {
+ 
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+
+  const removeFromCart = (id: number) => {
+    setCartItems((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
+  };
+
+  const addItemToCart = (item: CartItem) => {
+    setCartItems((prev) => [...prev, item]);
+  }
+
+  const contextValue: CartStateInterface = {
+    cartItems,
+    removeFromCart,
+    clearCart,
+    addItemToCart
+  };
 
   return (
-    <CartContext.Provider value={{ cart, dispatch }}>
+    <CartContext.Provider value={contextValue}>
       {children}
     </CartContext.Provider>
   );
 };
 
-export const useCart = () => {
-  const context = useContext(CartContext);
-  if (!context) {
-    throw new Error('useCart must be used within a CartProvider');
-  }
-  return context;
-};
+export const useCartContext = () => useContext(CartContext);
+export default CartContextProvider;

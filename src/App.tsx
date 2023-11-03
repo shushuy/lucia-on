@@ -3,12 +3,12 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Routes from './router/Navigator';
+import CartContextProvider from './context/CartContext';
 
-import { CartProvider } from './context/CartContext';
 
 const App: React.FC = () => {
   return (
-    <CartProvider>
+    <CartContextProvider>
       <div>
         <Header />
         <main>
@@ -16,7 +16,7 @@ const App: React.FC = () => {
         </main>
         <Footer />
       </div>
-    </CartProvider>
+    </CartContextProvider>
   );
 };
 

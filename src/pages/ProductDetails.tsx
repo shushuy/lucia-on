@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../components/Loading';
 import { useParams } from 'react-router-dom';
-// import { useCart } from '../context/CartContext';
 import { products } from '../products';
 import { CardMedia } from '@mui/material';
 import './ProductDetails.css';

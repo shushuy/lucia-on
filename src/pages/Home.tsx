@@ -1,23 +1,19 @@
-// Home.tsx
 import React from 'react';
+import MediaCard from '../components/MediaCard';
+import { products } from '../products';
+import './Home.css';
 
 const Home: React.FC = () => {
-  // Add your list of products here
-  const products = [
-    { id: 1, name: 'Product 1', price: 10 },
-    // Add more products...
-  ];
-
   return (
     <div>
-      <h1>Home v1.0.0</h1>
+      <h1>Home v1.0.1</h1>
+      <div className='grid-container'>
       {products.map((product) => (
-        <div key={product.id}>
-          <p>{product.name}</p>
-          <p>Price: ${product.price}</p>
-          {/* Add an "Add to Cart" button here */}
+        <div key={product.id} >
+          <MediaCard {...product} />
         </div>
       ))}
+      </div>
     </div>
   );
 };

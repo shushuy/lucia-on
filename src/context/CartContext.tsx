@@ -1,6 +1,6 @@
 import React, { ReactNode, createContext, useContext, useState } from "react";
 
-interface CartItem {
+export interface CartItem {
   id: number;
   quantity: number;
   price: number;

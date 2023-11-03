@@ -2,6 +2,7 @@ import { useCartContext } from '../context/CartContext';
 
 const CartView = () => {
   const { cartItems, removeFromCart, clearCart } = useCartContext();
+  console.log("🚀 ~ file: Cart.tsx:5 ~ CartView ~ cartItems:", {cartItems})
 
   return (
     <div>
@@ -24,7 +25,7 @@ const CartView = () => {
 
       {cartItems.length > 0 && (
         <div>
-          <p>Total: {cartItems.reduce((total, item) => total + item.price, 0)}</p>
+          <p>Total: {cartItems.reduce((total, item) => total + item.price * item.quantity, 0)}</p>
           <button onClick={clearCart}>Clear Cart</button>
         </div>
       )}

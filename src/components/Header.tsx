@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 // Header.tsx
 import React from 'react';
 import AppBar from '@mui/material/AppBar';

@@ -39,6 +39,7 @@ const CartContextProvider: React.FC<CartContextProviderProps> = ({ children }) =
 
   const clearCart = () => {
     setCartItems([]);
+    alert('Gracias por su compra')
   };
 
   const addItemToCart = (item: CartItem) => {

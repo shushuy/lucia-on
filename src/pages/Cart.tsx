@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 
 const CartView = () => {
   const { cartItems, removeFromCart, clearCart } = useCartContext();
+  const total: number = (cartItems.reduce((total, item) => total + item.price * item.quantity, 0))
+  const iva = total *.16
+  const descuento = total > 1000 ? total*.03 : 0;
   return (
     <div className='cart-container'>
       <div>
@@ -46,8 +49,11 @@ const CartView = () => {
 
         {cartItems.length > 0 && (
           <div className='cart-total-text'>
-            <Typography gutterBottom variant="h5" component="div">Total: ${cartItems.reduce((total, item) => total + item.price * item.quantity, 0)}</Typography>
-            <button onClick={clearCart}>Clear Cart</button>
+            <Typography gutterBottom variant="h6" component="div">{`Pre-total: $${parseFloat(`${total}`).toFixed(2)}`}</Typography>
+            <Typography gutterBottom variant="h6" component="div">{`Descuento: $${parseFloat(`${descuento}`).toFixed(2)}`}</Typography>
+            <Typography gutterBottom variant="h6" component="div">{`IVA: $${parseFloat(`${iva}`).toFixed(2)}`}</Typography>
+            <Typography gutterBottom variant="h5" component="div">{`Total: $${parseFloat(`${total + iva - descuento}`).toFixed(2)}`}</Typography>
+            <button onClick={clearCart}>Checkout</button>
           </div>
         )}
 

@@ -13,6 +13,9 @@ const Footer: React.FC = () => {
       <Link to='/csm'>
         <Typography variant="body2" align="center">Servicio Al Cliente</Typography>
       </Link>
+      <Link to='/rp'>
+        <Typography variant="body2" align="center">Relaciones Publicas</Typography>
+      </Link>
     </div>
   );
 };

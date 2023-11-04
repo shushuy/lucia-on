@@ -2,19 +2,21 @@
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import logoUrl from '../assets/logo.png';
+import nameUrl from '../assets/name.png';
 
 const Header: React.FC = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="static" >
+      <Toolbar className='header-1'>
         <div className='header-container'>
           <Link to='/'>
-          <Typography variant="h6">Lucia's Organic Nuts</Typography>
+            <img src={logoUrl} className='header-logo'/>
           </Link>
+            <img src={nameUrl} className='header-name'/>
           <Link to='/cart'>
             <ShoppingCartIcon />
           </Link>

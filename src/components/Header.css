@@ -4,3 +4,12 @@
   align-items: center;
   width: 100%
 }
+.header-logo {
+  width: 100px;
+}
+.header-name {
+  width: 200px;
+}
+.header-1 {
+  background-color: #00b894;
+}

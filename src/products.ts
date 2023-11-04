@@ -281,4 +281,125 @@ export const products:Array<MediaCardProps> =  [
     url:
       'https://cdn.pixabay.com/photo/2016/08/28/22/08/sesame-1627009_640.jpg',
   },
+  {
+    id: 36,
+    title: 'Chile Cascabel 1kg',
+    price: 138,
+    description: 'Chile Cascabel 1kg',
+    url:
+      'https://res.cloudinary.com/riqra/image/upload/w_656,h_656,c_limit,q_auto,f_auto/v1674839591/sellers/8/vafa0hnq1exwdi6eraqe.png',
+  },
+  {
+    id: 37,
+    title: 'Jujube 100 g',
+    price: 90,
+    description: 'Jujube 100 g',
+    url:
+      'https://health.clevelandclinic.org/wp-content/uploads/sites/3/2023/05/Jujube-Fruit-Dried-1409706855-770x533-1.jpg',
+  },
+  {
+    id: 38,
+    title: 'Uchuva 100 g',
+    price: 35,
+    description: 'Uchuva 100 g',
+    url:
+      'https://mco-s2-p.mlstatic.com/uchuva-deshidratada-be-fruit-100-natural-35gr-x-10-unid-14299-MCO20084852075_042014-O.jpg',
+  },
+  {
+    id: 39,
+    title: 'Aronias 100 g',
+    price: 40,
+    description: 'Aronias 100 g',
+    url:
+      'https://i.etsystatic.com/13700004/r/il/0fe802/5155239923/il_300x300.5155239923_i08e.jpg',
+  },
+  {
+    id: 40,
+    title: 'Espino amarillo 100 g',
+    price: 30,
+    description: 'Espino amarillo 100 g',
+    url:
+      'https://cdn.hauschka.com/images/system/plant_library/hauschka/hippophae-rhamnoides-l-gross.jpg',
+  },
+  {
+    id: 41,
+    title: 'Kumquat 100 g',
+    price: 60,
+    description: 'Kumquat 100 g',
+    url:
+      'https://elisabel.es/wp-content/uploads/2019/07/2845.jpg',
+  },
+  {
+    id: 42,
+    title: 'Baya de goji 100 g',
+    price: 30,
+    description: 'Baya de goji 100 g',
+    url:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKSySSMoDf6HLBAYNaboZEiPhzLQhhV8y5s7l8Kbi6UB-Y_Ukv1GhNMfKTD2kwO_iufh8&usqp=CAU',
+  },
+  {
+    id: 43,
+    title: 'Limón sin semilla 100 g',
+    price: 40,
+    description: 'Limón sin semilla 100 g',
+    url:
+      'https://http2.mlstatic.com/D_NQ_NP_824429-MLM54968787842_042023-O.webp',
+  },
+  {
+    id: 44,
+    title: 'Piñón blanco 1 kg',
+    price: 900,
+    description: 'Piñón blanco 1 kg',
+    url:
+      'https://rutren.com/wp-content/uploads/2018/02/AVAR-006A.jpg',
+  },
+  {
+    id: 45,
+    title: 'Chile mora 1 kg',
+    price: 105,
+    description: 'Chile mora 1 kg',
+    url:
+      'https://www.cocinista.es/download/bancorecursos/Productos10/10099-Chile-Seco-Ancho-El-Sarape-2.jpg',
+  },
+  {
+    id: 46,
+    title: 'Chile Mulato 1 kg',
+    price: 156.5,
+    description: 'Chile Mulato 1 kg',
+    url:
+      'https://media.justo.mx/products/22645_Chile_Mulato_J%C3%BCsto_Granel_100g_1.jpg',
+  },
+  {
+    id: 47,
+    title: 'Chile Ancho 1 kg',
+    price: 145,
+    description: 'Chile Ancho 1 kg',
+    url:
+      'https://www.cocinista.es/download/bancorecursos/Productos10/10099-Chile-Seco-Ancho-El-Sarape-2.jpg',
+  },
+  {
+    id: 48,
+    title: 'Chile Chipotle 1 kg',
+    price: 210,
+    description: 'Chile Chipotle 1 kg',
+    url:
+      'https://laesquinadelgranel.es/wp-content/uploads/2023/10/chile-chipotle-1691.jpg',
+  },
+  {
+    id: 49,
+    title: 'Nuez de Castilla 1 kg',
+    price: 205,
+    description: 'Nuez de Castilla 1 kg',
+    url:
+      'https://trico.com.mx/wp-content/uploads/2020/09/trico_nuez_castilla_cascara.jpg',
+  },
+  {
+    id: 50,
+    title: 'Cacahuate con cáscara 1 kg',
+    price: 95,
+    description: 'Cacahuate con cáscara 1 kg',
+    url: 'https://eledenmx.com/storage/uploads/1586369142.jpg',
+  }
+
+
 ];

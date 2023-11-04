@@ -6,7 +6,7 @@ import './Home.css';
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Home v1.0.1</h1>
+      <h1>Home</h1>
       <div className='grid-container'>
       {products.map((product) => (
         <div key={product.id} >

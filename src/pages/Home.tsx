@@ -2,11 +2,14 @@ import React from 'react';
 import MediaCard from '../components/MediaCard';
 import { products } from '../products';
 import './Home.css';
+import { Typography } from '@mui/material';
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <div className='home-title'>
+        <Typography variant='h6'>"¡Sabores naturales, energía sin límites!"</Typography >
+      </div>
       <div className='grid-container'>
       {products.map((product) => (
         <div key={product.id} >

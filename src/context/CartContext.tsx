@@ -39,11 +39,11 @@ const CartContextProvider: React.FC<CartContextProviderProps> = ({ children }) =
 
   const clearCart = () => {
     setCartItems([]);
-    alert('Gracias por su compra')
   };
 
   const addItemToCart = (item: CartItem) => {
-    setCartItems((prev) => [...prev, item]);
+    const itemExists = cartItems.find((i) => i.id === item.id);
+    !itemExists && setCartItems((prev) => [...prev, item]);
   }
 
   const contextValue: CartStateInterface = {

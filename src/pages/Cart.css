@@ -1,7 +1,6 @@
 .cart-container {
   justify-content: center;
   display: flex;
-  height: 75vh;
   width: 100%;
 }
 .cart-item {
@@ -22,4 +21,7 @@
   flex-direction: column;
   display: flex;
   margin-left: 1rem;
+}
+.cart-card {
+  margin: 1rem;
 }

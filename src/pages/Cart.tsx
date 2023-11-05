@@ -6,6 +6,7 @@ import CardIcon from '@mui/icons-material/CreditCard';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import LockIcon from '@mui/icons-material/Lock';
 import { useState } from 'react';
+import AddressForm from '../components/AddressForm';
 const CartView = () => {
   const initialState = {    
     number: '',
@@ -77,6 +78,9 @@ const CartView = () => {
                   fullWidth
                   onChange={(e) => setCC({ ...cc, cvv: e.target.value })}
                 />
+              </div>
+              <div>
+                <AddressForm />
               </div>
               <ul>
                 {cartItems.map((item) => (
